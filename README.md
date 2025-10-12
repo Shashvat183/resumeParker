@@ -10,10 +10,7 @@ https://github.com/user-attachments/assets/3a1c8590-80ff-4a63-98e3-b12f81006677
 
 <img width="1919" height="927" alt="Screenshot 2025-10-12 230115" src="https://github.com/user-attachments/assets/30de9260-8b2f-4a5b-9ea5-91ca60d90b47" />
 <img width="1901" height="838" alt="Screenshot 2025-10-12 230153" src="https://github.com/user-attachments/assets/81abe790-13e7-4d7f-b7d1-e5e43ef296a3" />
-<img width="1903" height="891" alt="Screenshot 2025-10-12 230213" src="https://github.com/user-attachments/assets/84185bfc-4ed7-4cec-b884-0507a07be884" />
-<img width="1901" height="929" alt="Screenshot 2025-10-12 230232" src="https://github.com/user-attachments/assets/edb5a8b6-cdff-4869-92a9-26725b42c031" />
-<img width="1900" height="919" alt="Screenshot 2025-10-12 230245" src="https://github.com/user-attachments/assets/25ab336a-912a-489f-bd6f-bc33c6336554" />
-<img width="1900" height="930" alt="Screenshot 2025-10-12 230028" src="https://github.com/user-attachments/assets/b57460a5-67a0-44e1-b1ee-b541611efa06" />
+
 
 
 ## ✨ Features
