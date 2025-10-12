@@ -308,6 +308,4 @@ If you have questions or need support:
 
 ---
 
-**Made with ❤️ by Shashvat**
-
 *Happy Resume Analyzing! 🚀*
