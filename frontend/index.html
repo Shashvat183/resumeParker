@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Parser</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Resume Parser</h1>
+            <p>Intelligent resume analysis with AI-powered insights</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+            <button class="tab-button active" onclick="openTab(event, 'upload-tab')">
+                📤 Upload Resume
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'history-tab')">
+                📊 Resume History
+            </button>
+        </div>
+
+        <!-- Tab 1: Upload Resume -->
+        <div id="upload-tab" class="tab-content active">
+            <div class="upload-section">
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-icon">📄</div>
+                    <h3>Upload Your Resume</h3>
+                    <p>Drag & drop your PDF resume here or click to browse</p>
+                    <input type="file" id="file-input" accept=".pdf" style="display: none;">
+                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">
+                        Choose File
+                    </button>
+                </div>
+            </div>
+
+            <!-- Loading Animation -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing your resume with AI... This may take a few moments.</p>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results" class="results-section hidden">
+                <div class="results-header">
+                    <h2>📋 Resume Analysis Results</h2>
+                    <div class="rating">
+                        <span>Overall Rating: </span>
+                        <span id="resume-rating" class="rating-score">0</span>/10
+                        <div class="rating-bar">
+                            <div id="rating-fill" class="rating-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-grid">
+                    <!-- Personal Information -->
+                    <div class="info-card">
+                        <h3>👤 Personal Information</h3>
+                        <div id="personal-info" class="info-content">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="info-card">
+                        <h3>🔧 Technical Skills</h3>
+                        <div id="core-skills" class="skills-list">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🤝 Soft Skills</h3>
+                        <div id="soft-skills" class="skills-list">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="info-card full-width">
+                        <h3>💼 Work Experience</h3>
+                        <div id="work-experience" class="experience-list">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="info-card">
+                        <h3>🎓 Education</h3>
+                        <div id="education" class="education-list">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="info-card">
+                        <h3>🚀 Projects</h3>
+                        <div id="projects" class="projects-list">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- AI Analysis -->
+                    <div class="info-card full-width">
+                        <h3>🔍 AI Analysis & Recommendations</h3>
+                        
+                        <div class="analysis-section">
+                            <h4>💪 Strengths</h4>
+                            <div id="strengths" class="analysis-content">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="analysis-section">
+                            <h4>📈 Areas for Improvement</h4>
+                            <div id="improvement-areas" class="analysis-content">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="analysis-section">
+                            <h4>🎯 Upskilling Suggestions</h4>
+                            <div id="upskill-suggestions" class="analysis-content">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Resume History -->
+        <div id="history-tab" class="tab-content">
+            <div class="history-header">
+                <h2>📊 Resume History</h2>
+                <button class="btn-secondary" onclick="loadResumeHistory()">
+                    🔄 Refresh
+                </button>
+            </div>
+
+            <div class="table-container">
+                <table id="resumes-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Upload Date</th>
+                            <th>Rating</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resumes-table-body">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Resume Details -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Resume Details</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast">
+        <!-- Populated by JavaScript -->
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
